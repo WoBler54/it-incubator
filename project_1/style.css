@@ -1,0 +1,140 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+} 
+
+ul{
+    list-style: none;
+}
+
+body {
+    font-family: 'Rubik' , sans-serif;
+    font-feature-settings: 'clig' off, 'liga' off;
+}
+
+header {
+    background-color: #0A61F7; 
+    
+    
+}
+
+.header.links{
+    text-decoration: none;
+    text-align: right;
+    color: #ffffff;
+    text-decoration: none;      
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 166.667% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+h1{
+    color: var(--Text, #363940);
+     
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 68px; /* 117.241% */
+}
+
+p{
+    color: var(--Neutral-4, #95A1BB);
+   
+   
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 137.5% */
+}
+
+.button{
+    border-radius: 4px;
+    background-color:  #0A61F7;
+    color: #FFF;
+    padding: 15px 24px;
+    border: none;
+
+    text-align: center;
+    
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.6px; /* 140% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.table.title{
+    color: var(--Text, #363940);
+    text-align: center;
+    
+   
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 122.222% */
+}
+
+.table.title.first{
+    
+    width: 200px;
+    color: var(--Neutral-4, #95A1BB);
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+}
+
+.table.label{
+    color: var(--Text, #363940);
+
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+}
+
+#haveQuestion{
+    color: var(--Text, #104ede);
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+}
+
+#table.btn{
+    background-color: red;
+    border-radius: 4px;
+    border: 1px solid #0A61F7;
+    background-color: #FFF;
+    text-align: center;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.6px; /* 163.333% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.table.btn{
+    background-color: red;
+    border-radius: 4px;
+    border: 1px solid #0A61F7;
+    background-color: #FFF;
+    text-align: center;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19.6px; /* 163.333% */
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
