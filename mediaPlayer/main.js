@@ -1,49 +1,67 @@
-let track = {
-    coverTrack : '',
-    artist: '',
-    title: '',
-    audio: '',
-    isHot: false
-}
-let playList = [];
+// const playList = {
+//     playListID: '1',
+//     playListInfo: {
+//         title: '',
+//         coverImageUrl: '',
+//         totalInfo:{
+//             totalTracksCount: 4,
+//             totalTracksDuration : 777
+//         }
 
-let createTrack = function(coverTrack,artist,title,audio){
-    let newTrack = Object.create(track);
-    newTrack.coverTrack = coverTrack;
-    newTrack.artist = artist;
-    newTrack.title = title;
-    newTrack.audio = audio;
+//     },
+//     tracks: [
+//         {
+//             trackID: '1',
+//             trackCoverImageUrl: 'assets/tracksCover/Eminem.jpg',
+//             artistName: 'Eminem',
+//             trackTitle: 'Rap god',
+//             trackFileUrl: 'assets/tracks/eminem–rap-god.mp3',
+//             trackDurationPerSecond : 1,
+//             isHot : true
+//         },
+//         {
+//             trackID: '2',
+//             trackCoverImageUrl: 'assets/tracksCover/50_Cent.jpg',
+//             artistName: '50 Cent',
+//             trackTitle: 'In Da Club',
+//             trackFileUrl: 'assets/tracks/50-cent-in-da-club.mp3',          
+//             trackDurationPerSecond : 1,
+//             isHot : false
+//         }
+//     ]
+// }
 
-    playList.push(newTrack);
-    return newTrack;
-}
 
-let rapGodEminem = createTrack('assets/traksCover/Eminem.jpg','Eminem','Rap god','assets/tracks/eminem–rap-god.mp3');
-let inDaClub50Cent = createTrack('assets/traksCover/50_Cent.jpg','50 Cent','In Da Club','assets/tracks/50-cent-in-da-club.mp3');
 
-function renderTrack(track){
-    let div = document.createElement('div');
+
+
+// function renderTrack(track){
+//     let div = document.createElement('div');
     
 
-    let cover = document.createElement('img');
-    cover.src = track.coverTrack;
-    cover.width = 150;
-    cover.height = 150;
-    div.append(cover);
+//     let cover = document.createElement('img');
+//     cover.src = track.trackCoverImageUrl;
+//     cover.width = 150;
+//     cover.height = 150;
+//     div.append(cover);
 
 
-    let span = document.createElement('span');
-    span.innerText = track.artist + ' - ' + track.title;
-    div.append(span);
+//     let span = document.createElement('span');
+//     span.innerText = track.artistName + ' - ' +track.trackTitle;
+//     div.append(span);
 
-    let audio = document.createElement('audio');
-    audio.src = track.audio;
-    audio.controls = true;
-    div.append(audio);   
+//     let audio = document.createElement('audio');
+//     audio.src = track.trackFileUrl;
+//     audio.controls = true;
+//     div.append(audio);   
 
-    document.body.append(div);
-}
+//     document.body.append(div);
+// }
 
-for(track of playList){
+import { playList } from "./render/data.module.js";
+import { renderTrack } from "./render/renderTrack.module.js";
+
+for(let track of playList.tracks){
+
     renderTrack(track);
 };
